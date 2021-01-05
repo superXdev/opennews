@@ -1,5 +1,6 @@
 # OpenNews frontend
 This is for example of implementation OpenNews API, the features in this web app using all of API functionality. Created with ReactJS and Bootstrap 5
+- Api web: https://opennewsapi.herokuapp.com
 
 ![ss](https://fikridev.tech/assets/images/opn/1.png)
 
@@ -14,6 +15,6 @@ This is for example of implementation OpenNews API, the features in this web app
 https://opennews.netlify.app
 
 ## Contact me
-Linkedin: https://www.linkedin.com/in/fikri-rudiansyah-700b171b6/
-Personal web: http://fikridev.tech/
-Email: fikrizhanking@gmail.com
+- Linkedin: https://www.linkedin.com/in/fikri-rudiansyah-700b171b6/
+- Personal web: http://fikridev.tech/
+- Email: fikrizhanking@gmail.com
