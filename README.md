@@ -1,7 +1,7 @@
 # OpenNews frontend
 This is for example of implementation OpenNews API, the features in this web app using all of API functionality. Created with ReactJS and Bootstrap 5
 
-[ss](https://fikridev.tech/assets/images/opn/1.png)
+![ss](https://fikridev.tech/assets/images/opn/1.png)
 
 ## Installation
 1. Clone this repositories
