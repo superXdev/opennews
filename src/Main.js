@@ -1,10 +1,8 @@
 import React from 'react'
-import { Route, NavLink, HashRouter } from 'react-router-dom'
 
 import Router from './router'
 import Navbar from './components/Navbar'
 
-const baseUrl = React.createContext('https://opennewsapi.herokuapp.com')
 function Main() {
 	
 
