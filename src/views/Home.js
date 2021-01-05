@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BeatLoader } from 'react-spinners'
-import { css } from '@emotion/react'
 
 import Sidebar from '../components/Sidebar'
 import Article from '../components/Article'
 import Header from '../components/Header'
 import Paginate from '../components/Paginate'
-
-const loaderCSS = css`
-	color: black;
-`
 
 function Home() {
 	const [articles, setArticles] = useState([])
@@ -64,7 +59,7 @@ function Home() {
 				/>
 
 				<div className="text-center">
-				<BeatLoader css={loaderCSS} size={24} color='darkblue' loading={loading} />
+				<BeatLoader size={24} color='darkblue' loading={loading} />
 				</div>
 					
 				{

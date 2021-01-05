@@ -14,16 +14,19 @@ function Tag() {
 	const [page, setPage] = useState(1)
 	const [maxPage, setMaxPage] = useState(0)
 	const [keyword, setKeyword] = useState('')
+	const [loading, setLoading] = useState(false)
 
 	const handleChangeOrder = (e) => {
 		setOrder(e.target.value)
 	}
 
 	const getArticles = async () => {
+		setLoading(true)
 		try {
 			let response = await axios.get(`${process.env.REACT_APP_API_URL}/api/news?order_by=${order}&tag=${param.tagname}&limit=15&page=${page}&keyword=${keyword}`)
 			setArticles(response.data.results)
 			setMaxPage(response.data.pages)
+			setLoading(false)
 		} catch(e) {
 			console.log(e.message)
 		}
@@ -72,11 +75,12 @@ function Tag() {
 					})
 				}
 
-				<Paginate 
-				handlePage={handlePage}
-				page={page}
-				maxPage={maxPage}
-				/>
+				{ (loading) ? '' : (<Paginate 
+					handlePage={handlePage}
+					page={page}
+					maxPage={maxPage}
+					/>) 
+				}
 					
 				</div>
 				<div className="col-md-4">
