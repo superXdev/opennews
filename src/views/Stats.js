@@ -15,6 +15,7 @@ function Stats() {
 
 	useEffect(() => {
 		getStat()
+		console.log(window.location.pathname === '/stats')
 	}, [])
 
 	return (

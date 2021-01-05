@@ -44,6 +44,7 @@ function Home() {
 
 	useEffect(() => {
 		getArticles()
+		console.log(window.location.pathname === '/stats')
 	}, [order, page])
 
 	return (
